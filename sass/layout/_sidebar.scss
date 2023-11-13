@@ -1,0 +1,93 @@
+.sidebar {
+    background-color: var(--cinza-escuro-1);
+    flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__nav {
+        font-size: 1.4rem;
+        list-style: none;
+        margin-top: 3.5rem;
+        padding-left: 0;
+    
+        @media only screen and (max-width: 62em) { //Talvez 48em
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+    
+        &--item {
+            position: relative;
+    
+            @media only screen and (max-width: 62em) {
+                flex: 1 0 30%;
+            }
+    
+            &:not(:last-child) {
+                margin-bottom: .5rem;
+    
+                @media only screen and (max-width: 62em) {
+                    margin: 0;
+                }
+            }
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                background-color: var(--cor-primaria);
+                transform: scaleY(0);
+                transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
+            }
+    
+            &:hover::before, &-selected::before {
+                transform: scaleY(1);
+                width: 100%;
+            }
+    
+            &:active::before {
+                background-color: var(--cor-primaria-clara);
+            }
+        }
+    
+        &--link:any-link {
+            color: var(--cinza-claro-1);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1.5rem 3rem;
+            position: relative;
+            z-index: 1;
+    
+            display: flex;
+            align-items: center;
+    
+            @media only screen and (max-width: 62em) {
+                justify-content: center;
+            }
+    
+            & span {
+                @media only screen and (max-width: 37.5em) {
+                    display: none;
+                }
+            }
+        }
+    
+        &--icon {
+            height: 1.75rem;
+            width: 1.75rem;
+            margin-right: 2rem;
+            fill: currentColor;
+    
+            @media only screen and (max-width: 37.5em) {
+                margin-right: 0;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}

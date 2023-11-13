@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--cinza-escuro-4);
+    font-size: 1.4rem;
+    color: var(--cinza-claro-4);
+    text-align: center;
+    padding: 2.5rem;
+
+    &__nav {
+        list-style: none;
+        padding-left: 0;
+    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        &--item {
+            width: 15rem;
+        }
+    
+        &--link:any-link {
+            font-size: 1.4rem;
+            color: white;
+            text-decoration: none;
+            font-family: var(--fonte-display);
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1.5rem;
+            display: block;
+            transition: all .2s;
+    
+            &:hover, &:active {
+                //background-color: rgba(white, .05);
+                font-weight: 600;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}

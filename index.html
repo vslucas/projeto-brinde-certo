@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--DEIXA PARA DEPOIS <script type="text/javascript" src="autocomplete.js"></script>-->
+        
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        
+    <title>Brinde Certo &mdash; A escolha ideal para momentos memoráveis</title>
+</head>
+<body> <!--Talvez o Container vá aqui-->
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="Logo do site" class="header__logo">
+
+            <form action="#" method="GET" class="header__search" autocomplete="off">
+                <input type="text" class="header__search--input" name="search" id="searchInput" placeholder="Busque refrigerantes, sucos, vinhos e muito mais">
+                <button class="header__search--btn">
+                    <svg class="header__search--icon">
+                        <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="header__user-nav">
+                <div class="header__user-nav--icon-box">
+                    <svg class="header__user-nav--icon">
+                        <use href="img/sprite.svg#icon-bookmarks"></use>
+                    </svg>
+                    <span class="header__user-nav--notification">6</span>
+                    <ul class="header__user-nav--messages">
+                        <li class="header__user-nav--notice">
+                            <svg class="header__user-nav--chat">
+                                <use href="img/sprite.svg#icon-alert-circle"></use>
+                            </svg>
+                            <span class="header__user-nav--sentence">Você favoritou 6 itens!</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__user-nav--icon-box">
+                    <svg class="header__user-nav--icon">
+                        <use href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                    <span class="header__user-nav--notification">11</span>
+                    <ul class="header__user-nav--messages">
+                        <li class="header__user-nav--notice">
+                            <svg class="header__user-nav--chat">
+                                <use href="img/sprite.svg#icon-alert-circle"></use>
+                            </svg>
+                            <span class="header__user-nav--sentence">Você tem 11 pedidos em andamento!</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="header__user-nav--client">
+                    <img src="img/usuario-perfil.jpg" alt="Foto do Usuário" class="header__user-nav--client-photo">
+                    <span>Rafael</span>
+                    <ul class="header__user-nav--menu">
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-user"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Perfil</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-notifications-outline"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Notificações</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-coin-dollar"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Pagamentos</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-cog"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Configurações</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-question"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Ajuda</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-history"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Histórico</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-bug_report"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Reportar um erro/bug</span>
+                            </a>
+                        </li>
+                        <li class="header__user-nav--option">
+                            <a href="#" class="header__user-nav--topic">
+                                <svg class="header__user-nav--topic-icon">
+                                    <use href="img/sprite.svg#icon-exit"></use>
+                                </svg>
+                                <span class="header__user-nav--word">Logout/Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <aside class="sidebar">
+                <ul class="sidebar__nav">
+                    <li class="sidebar__nav--item sidebar__nav--item-selected">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-cup"></use>
+                            </svg>
+                            <span>Refrigerantes</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-drink11"></use>
+                            </svg>
+                            <span>Sucos</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-glass1"></use>
+                            </svg>
+                            <span>Vinhos</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-droplet"></use>
+                            </svg>
+                            <span>Águas e Gelo</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-emoji_food_beverage"></use>
+                            </svg>
+                            <span>Chás</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-coffee"></use>
+                            </svg>
+                            <span>Cafés</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-mug"></use>
+                            </svg>
+                            <span>Cervejas</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-fastfood"></use>
+                            </svg>
+                            <span>Lanches</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav--item">
+                        <a href="#" class="sidebar__nav--link">
+                            <svg class="sidebar__nav--icon">
+                                <use href="img/sprite.svg#icon-cake"></use>
+                            </svg>
+                            <span>Doces</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="overview">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/refri-1.jpg" alt="Foto 1 do Refrigerante" class="gallery__photo">
+                        <figcaption class="gallery__description">Efervescente</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/refri-2.jpg" alt="Foto 2 do Refrigerante" class="gallery__photo">
+                        <figcaption class="gallery__description">Saboroso</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/refri-3.jpg" alt="Foto 3 do Refrigerante" class="gallery__photo">
+                        <figcaption class="gallery__description">Refrescante</figcaption>
+                    </figure>
+                </div>
+
+                <div class="summary">
+                    <h1 class="summary__title">
+                        Refrigerante Coca-Cola
+                    </h1>
+
+                    <div class="summary__price">
+                        <span>Preço: R$3,75</span>
+                    </div>
+
+                    <div class="summary__review">
+                        <div class="summary__review-average">9.5</div>
+                        <div class="summary__review-amount">42678 votos</div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="details__description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro sunt cupiditate. Labore praesentium autem commodi sunt debitis nemo, molestias recusandae. Ea architecto, ut sunt, magni repellat minus quisquam ullam, iste quod beatae commodi unde.
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi porro voluptate et excepturi consectetur recusandae fugit debitis adipisci eveniet.
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">Marca: Coca-Cola</li>
+                            <li class="list__item">Sabor: Cola</li>
+                            <li class="list__item">Volume: 310ml</li>
+                            <li class="list__item">Consumir gelado</li>
+                            <li class="list__item">Não Contém Glúten</li>
+                            <li class="list__item">Embalagem Reciclável</li>
+                            <li class="list__item">Contém Aromatizante</li>
+                            <li class="list__item">Validade: Vide Marcação</li>
+                        </ul>
+                        <div class="recommendation">
+                            <p class="recommendation__amount">
+                                Alexandre e outros 3 amigos recomendam essa bebida.
+                            </p>
+                            <div class="recommendation__friends">
+                                <img src="img/usuario-1.jpg" alt="Amigo 1" class="recommendation__photo">
+                                <img src="img/usuario-2.jpg" alt="Amigo 2" class="recommendation__photo">
+                                <img src="img/usuario-3.jpg" alt="Amigo 3" class="recommendation__photo">
+                                <img src="img/usuario-4.jpg" alt="Amigo 4" class="recommendation__photo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details__client-rating">
+                        <figure class="rating">
+                            <blockquote class="rating__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sequi numquam? Fugit minima iure ullam asperiores illo ut.
+                            </blockquote>
+                            <figcaption class="rating__customer">
+                                <img src="img/cliente-1.jpg" alt="Cliente 1" class="rating__photo">
+                                <div class="rating__customer-box">
+                                    <p class="rating__customer-name">Esther Bueno</p>
+                                    <p class="rating__customer-date">Jan 29, 2023</p>
+                                </div>
+                                <div class="rating__number">7.9</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="rating">
+                            <blockquote class="rating__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quaerat obcaecati a.
+                            </blockquote>
+                            <figcaption class="rating__customer">
+                                <img src="img/cliente-2.jpg" alt="Cliente 2" class="rating__photo">
+                                <div class="rating__customer-box">
+                                    <p class="rating__customer-name">Giovanna Melo</p>
+                                    <p class="rating__customer-date">Aug 17, 2023</p>
+                                </div>
+                                <div class="rating__number">9.5</div>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-inline">Mostrar todos <span>&rarr;</span></button>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2 class="cta__buy-now">
+                        Boas notícias! Temos unidades deste produto prontas para envio.
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__visible">Compre Agora</span>
+                        <span class="btn__invisible">Restam apenas 10 unidades</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Termos de Uso</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Trabalhe Conosco</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Política de Privacidade</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Perguntas Frequentes</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Cidades Atendidas</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Fale conosco</a></li>
+            </ul>
+            <p>
+                Site elaborado para construção de portfólio. &copy; Direitos Autorais 2023 por Lucas Silva. 
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

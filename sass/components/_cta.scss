@@ -1,0 +1,59 @@
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    @media only screen and (max-width: 62em) { //Talvez 56.25em (900px)
+        padding: 2.5rem 0;
+    }
+
+    &__buy-now {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 0 2.5rem;
+    }
+}
+
+// BOTÃO CALL TO ACTION (CTA)
+.btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, var(--cor-primaria-clara), var(--cor-primaria-escura));
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    & > * {
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    &__visible {
+        padding: 2rem 3.5rem;
+    }
+
+    &__invisible {
+        padding: 2rem 3.5rem;
+        position: absolute;
+        left: 0;
+        top: -100%;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, var(--cor-primaria-clara), var(--cor-primaria-escura));
+        outline: none;
+        animation: pulsar .8s infinite;
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: -10%;
+    }
+}
