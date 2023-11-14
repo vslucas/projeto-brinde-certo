@@ -1,33 +1,34 @@
 .details {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     display: flex;
-    padding: 3.5rem 4.5rem;
+    flex-direction: column;
+    padding: 3rem;
     background-color: var(--cinza-claro-3);
     border-bottom: var(--linha);
 
-    @media only screen and (max-width: 62em) {
-        padding: 3rem;
+    @media only screen and (min-width: 37.5em) { 
+        flex-direction: row;
     }
-
-    @media only screen and (max-width: 37.5em) {
-        flex-direction: column;
+    
+    @media only screen and (min-width: 62em) {
+        padding: 3.5rem 4.5rem;
     }
-
+    
     &__description {
         background-color: #fff;
         box-shadow: var(--sombra-clara);
-        padding: 3rem;
         flex: 0 0 55%;
-        margin-right: 4.5rem;
+        padding: 2rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
 
-        @media only screen and (max-width: 62em) {
-            padding: 2rem;
+        @media only screen and (min-width: 37.5em) {
             margin-right: 3rem;
         }
-
-        @media only screen and (max-width: 37.5em) {
-            margin-right: 0;
-            margin-bottom: 3rem;
+        
+        @media only screen and (min-width: 62em) {
+            padding: 3rem;
+            margin-right: 4.5rem;
         }
     }
 

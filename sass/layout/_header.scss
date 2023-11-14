@@ -1,18 +1,20 @@
 .header {
     font-size: 1.4rem;
-    height: 7rem;
+    height: 15rem;
+    padding-bottom: 2rem;
     background-color: #fff;
     border-bottom: var(--linha);
 
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 37.5em) { //600px
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 15rem;
-        padding-bottom: 2rem;
+    @media only screen and (min-width: 37.5em) { 
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 7rem;
+        padding-bottom: 0;
     }
 
     &__logo {
@@ -21,18 +23,21 @@
     }
 
     &__search {
-        flex: 0 0 40%;
+        flex: 0 0 100%;
+        order: 1;
     
         display: flex;
         justify-content: center;
         align-items: center;
     
         position: relative;
+
+        background-color: var(--cinza-claro-2);
     
-        @media only screen and (max-width: 37.5em) { 
-            order: 1;
-            flex: 0 0 100%;
-            background-color: var(--cinza-claro-2);
+        @media only screen and (min-width: 37.5em) { 
+            order: 0;
+            flex: 0 0 40%; 
+            background-color: white;
         }
     
         &--input {
@@ -46,7 +51,7 @@
             width: 90%;
             margin-right: -3.25rem;
             transition: all .2s;
-    
+
             &:focus {
                 outline: 1px solid var(--cinza-claro-4);
                 width: 100%;
@@ -71,8 +76,14 @@
         &--icon {
             height: 2rem;
             width: 2rem;
+            margin-left: -.75rem;
             fill: var(--cinza-escuro-3);
             cursor: pointer;
+
+            @media only screen and (min-width: 48em) {
+                margin-right: -.5rem;
+                margin-left: -.75rem;
+            }
         }
     }
 
@@ -83,8 +94,10 @@
     
         position: relative;
 
-        @media only screen and (max-width: 37.5em) { //600px
-            margin-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        @media only screen and (min-width: 37.5em) {
+            margin-bottom: 0;
         }
     
         & > * {
@@ -141,12 +154,16 @@
             display: none;
             z-index: 2;
             position: absolute;
-            top: 7rem;
+            top: 3.75rem;
             left: -7.5rem;
             border: 3px solid var(--cinza-escuro-2);
     
-            @media only screen and (max-width: 37.5em) {
-                top: 3.75rem; //VER ISSO AQUI (de 385px até 600px)!! 
+            @media only screen and (min-width: 24.25em) { //388px
+                top: 6rem; 
+            }
+            
+            @media only screen and (min-width: 37.5em) {
+                top: 7rem;
             }
         }
     
@@ -184,13 +201,17 @@
             z-index: 3;
             display: none;
             position: absolute;
-            top: 5.55rem;
+            top: 2.45rem;
             left: 4.75rem;
             padding-left: 0;
             border: 3px solid var(--cinza-escuro-2);
     
-            @media only screen and (max-width: 37.5em) {
-                top: 2.45rem; //VER ISSO AQUI (de 385px até 600px)!!
+            @media only screen and (min-width: 24.25em) { //388px
+                top: 6rem; 
+            }
+            
+            @media only screen and (min-width: 37.5em) {
+                top: 5.55rem; 
             }
         }
     

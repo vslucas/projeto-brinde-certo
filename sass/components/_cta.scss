@@ -1,9 +1,9 @@
 .cta {
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     text-align: center;
 
-    @media only screen and (max-width: 62em) { //Talvez 56.25em (900px)
-        padding: 2.5rem 0;
+    @media only screen and (min-width: 62em) { 
+        padding: 3.5rem 0;
     }
 
     &__buy-now {

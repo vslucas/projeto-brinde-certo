@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria: #4eeb2f;
-    --cor-primaria-clara: #33ff55;
+    --cor-primaria: #45d129;
+    --cor-primaria-clara: #30ec4f;
     --cor-primaria-escura: #26ba46;
 
     --cinza-claro-1: #faf9f9;
@@ -24,13 +24,14 @@
 // 992px = 62em
 // 768px = 48em 
 // 600px = 37.5em
+// 388px = 24.25em
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px
+    font-size: 50%;
 
-    @media only screen and (max-width: 75em) { 
-        font-size: 50%;
+    @media only screen and (min-width: 75em) { 
+        font-size: 62.5%;
     }
 }
 
@@ -55,14 +56,15 @@ html, body, html::before, body::before, html::after, body::after {
 }
 
 .container {
-    max-width: 120rem;
-    margin: 8rem auto;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
     background-color: var(--cinza-claro-1);
     box-shadow: var(--sombra-escura);
 
-    @media only screen and (max-width: 75em) {
-        margin: 0;
-        max-width: 100%;
-        overflow: hidden;
+    @media only screen and (min-width: 75em) {
+        max-width: 120rem;
+        margin: 8rem auto;
+        overflow: auto;
     }
 }

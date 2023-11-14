@@ -9,27 +9,27 @@
     &__nav {
         font-size: 1.4rem;
         list-style: none;
-        margin-top: 3.5rem;
         padding-left: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
     
-        @media only screen and (max-width: 62em) { //Talvez 48em
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0;
+        @media only screen and (min-width: 62em) { 
+            display: block;
+            margin-top: 3.5rem;
         }
     
         &--item {
             position: relative;
-    
-            @media only screen and (max-width: 62em) {
-                flex: 1 0 30%;
-            }
+
+            flex: 1 0 30%;
     
             &:not(:last-child) {
-                margin-bottom: .5rem;
-    
-                @media only screen and (max-width: 62em) {
-                    margin: 0;
+                margin: 0;
+
+                @media only screen and (min-width: 62em) {
+                    margin-bottom: .5rem;
                 }
             }
     
@@ -65,28 +65,32 @@
     
             display: flex;
             align-items: center;
+            justify-content: center;
     
-            @media only screen and (max-width: 62em) {
-                justify-content: center;
+            @media only screen and (min-width: 62em) {
+                justify-content: flex-start;
             }
     
             & span {
-                @media only screen and (max-width: 37.5em) {
-                    display: none;
+                display: none;
+                
+                @media only screen and (min-width: 37.5em) {
+                    display: block;
                 }
             }
         }
     
         &--icon {
-            height: 1.75rem;
-            width: 1.75rem;
-            margin-right: 2rem;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 0;
+
             fill: currentColor;
     
-            @media only screen and (max-width: 37.5em) {
-                margin-right: 0;
-                width: 2rem;
-                height: 2rem;
+            @media only screen and (min-width: 37.5em) {
+                height: 1.75rem;
+                width: 1.75rem;
+                margin-right: 2rem;
             }
         }
     }
