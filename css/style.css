@@ -152,6 +152,11 @@ html, body, html::before, body::before, html::after, body::after {
   opacity: 1;
 }
 
+.overview {
+  background-color: #fff;
+  flex: 1;
+}
+
 .btn-inline {
   border: none;
   color: var(--cor-primaria);
