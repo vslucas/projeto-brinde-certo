@@ -61,6 +61,27 @@ html, body, html::before, body::before, html::after, body::after {
   }
 }
 
+.autocomplete-items {
+  width: 95%;
+  background-color: white;
+  color: var(--cinza-escuro-2);
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.autocomplete-items > * {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid var(--cinza-claro-4);
+}
+.autocomplete-items > *:hover {
+  background-color: var(--cinza-escuro-1);
+  color: var(--cor-primaria-clara);
+}
+
 .cta {
   padding: 2.5rem 0;
   text-align: center;
