@@ -21,7 +21,7 @@ Welcome to the Brinde Certo project, a fictional website selling drinks, snacks 
 - Percorra um menu repleto de opções das mais variadas bebidas e petiscos
 - Pesquise sua bebida, lanche ou doce favorito
 - Confira todos os detalhes para uma compra infalível
-
+***
 - Browse a menu full of options for the most varied drinks and snacks
 - Search your favorite drink, snack or candy
 - Check out all the details for a foolproof purchase
